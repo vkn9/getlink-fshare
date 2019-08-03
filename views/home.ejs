@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Getlink và Xem Phim Online trên Fshare</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="menu">
+        <nav class="navbar navbar-light bg-dark">
+          <a class="navbar-brand" id="logo" href="#">ntd.pw</a>
+        </nav>
+      </div>
+      <div class="form-group">
+        <label for="link-fshare">Link Fshare cần getlink</label>
+        <input
+          type="text"
+          class="form-control"
+          id="link-fshare"
+          value="https://www.fshare.vn/file/OSQ2P5APFRAU"
+        />
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="typeget"
+          id="getlink"
+          value="getlink"
+          checked
+        />
+        <label class="form-check-label" for="getlink">
+          Getlink
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="typeget"
+          id="xemonline"
+          value="xemonline"
+        />
+        <label class="form-check-label" for="xemonline">
+          Xem Online (MP4)
+        </label>
+      </div>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-success" id="btn-xu-ly">Xử lý</button>
+      </div>
+
+      <div id="result">
+        <input type="text" class="form-control" id="link-maxspeed" />
+        <div id="video-online" >
+          <video id="player" playsinline controls></video>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

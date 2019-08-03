@@ -1,0 +1,19 @@
+#result {
+    margin-top: 20px;
+}
+
+#result video {
+    width: 100%;
+}
+
+#menu {
+    margin-bottom: 20px;
+}
+
+#logo {
+    color: white;
+}
+
+#link-maxspeed, #video-online {
+    display: none;
+}
